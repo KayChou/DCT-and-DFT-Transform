@@ -16,5 +16,4 @@ for i=0:N-1
     end
 end
 D = A*X*A';
-DD = dct2(X);
-imshow(DD)
+DD = dct2(X)

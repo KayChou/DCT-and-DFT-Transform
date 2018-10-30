@@ -5,15 +5,14 @@ imshow(img);
 title("Origin Image");
 
 % DCT Transform
-img_dct = dct2(img);
+img_dct = DCT_2D(img);
 subplot(1, 3, 2);
 imshow(img_dct)
 title("DCT Transform")
 
-% DFT Transform
-shape = size(img);
-dft_matrix = dctmtx(shape(1));
-img_dft = dft_matrix*double(img)*dft_matrix';
+% DST Transform
+%img_dst = dst(img);
+img_dst = DST_2D(img);
 subplot(1, 3, 3);
-imshow(img_dft);
-title("DFT Transform");
+imshow(img_dst);
+title("DST Transform");
