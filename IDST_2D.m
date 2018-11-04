@@ -12,5 +12,5 @@ for i=1:N
     end
 end
 input = double(input);
-output = matrix' * input * matrix / N;
+output = matrix' * input * matrix ;
 end

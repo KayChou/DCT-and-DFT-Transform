@@ -11,7 +11,7 @@ imshow(img_dct)
 title("DCT Transform")
 subplot(2, 3, 5)
 img_idct = IDCT_2D(img_dct);
-imshow(img_idct);
+imshow(uint8(img_idct));
 title("IDCT Transform")
 
 % DST Transform
@@ -22,5 +22,5 @@ imshow(img_dst);
 title("DST Transform");
 subplot(2, 3, 6)
 img_idst = IDST_2D(img_dst);
-imshow(img_idst)
+imshow(uint8(img_idst))
 title("IDST Transform")

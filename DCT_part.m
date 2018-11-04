@@ -1,4 +1,4 @@
-function [output] = IDCT_2D(input)
+function [output] = DCT_part(input)
 %DCT Transform
 %input is an N by N matrix
 %output is the dct transform of input
@@ -16,6 +16,13 @@ for i=0:N-1
     end
 end
 input = double(input);
-output = matrix' * input * matrix ;
+result = matrix * input * matrix';
+
+output = zeros(shape);
+for i = 1:6
+    for j = 1:i
+        output(i, j) = result(i, j);
+    end
+end
 end
 
