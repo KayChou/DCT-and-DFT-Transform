@@ -1,9 +1,10 @@
 clear;
+addpath('./DCT')
+
 img = imread("lena.jpg");
 subplot(1, 3, 1);
 imshow(img);
 title("Origin Image");
-
 
 % Global DCT Transform
 img_dct = DCT_2D(img);
@@ -14,7 +15,6 @@ subplot(2, 3, 5)
 img_idct = IDCT_2D(img_dct);
 imshow(uint8(img_idct));
 title("全局DCT反变换")
-
 
 % block DCT Transform
 img_dct = blkproc(img, [8, 8], 'DCT_part');
