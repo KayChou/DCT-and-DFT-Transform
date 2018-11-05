@@ -5,14 +5,14 @@ function [output] = IDCT_2D(input)
 shape = size(input);
 N = shape(1);
 matrix = zeros(N);
-for i=0:N-1
-    if i==0
+for m=0:N-1
+    if m==0
         c = sqrt(1/N);
     else
         c = sqrt(2/N);
     end
-    for j=0:N-1
-        matrix(i+1, j+1) = c * cos( pi*(j+0.5)*i/N );
+    for n=0:N-1
+        matrix(m+1, n+1) = c * cos( pi*(n+0.5)*m/N );
     end
 end
 input = double(input);
