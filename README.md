@@ -8,8 +8,8 @@
 
 <center>DCT Transform</center>
 
-![DCT](C:\Users\benjamin\Pictures\DCT.JPG)
+![DCT](DCT/DCT.JPG)
 
 <center>DFT Transform</center>
 
-![](C:\Users\benjamin\Pictures\DFT.JPG)
+![](DFT/DFT.JPG)
