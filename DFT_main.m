@@ -23,6 +23,7 @@ imshow(abs(img_dft));
 title("分块DFT变换")
 subplot(2, 3, 6);
 img_idft = blkproc(img_dft, [8, 8], 'IDFT_2D');
+img_idft = abs(img_idft);
 imshow(uint8(img_idft));
 title("分块DFT逆变换")
 

@@ -8,10 +8,10 @@ matrix = zeros(N);
 for m=1:N
     c = 1/N;
     for n=1:N
-        matrix(m, n) = c * exp(-1j*2*pi*(m-1)*(n-1)/N);
+        matrix(m, n) = c * exp(1j*2*pi*(m-1)*(n-1)/N);
     end
 end
 input = double(input);
-output = matrix' * input * matrix ;
+output = matrix * input * matrix' ;
 end
 

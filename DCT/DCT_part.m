@@ -19,8 +19,8 @@ input = double(input);
 result = matrix * input * matrix';
 
 output = zeros(shape);
-for m = 1:6
-    for n = 1:m
+for m = 1:7
+    for n = 1:7 - m
         output(m, n) = result(m, n);
     end
 end
