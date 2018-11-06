@@ -1,4 +1,4 @@
-clear;
+clear;clc
 addpath('./DFT')
 
 img = imread("lena.jpg");
